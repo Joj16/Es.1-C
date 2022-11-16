@@ -9,11 +9,11 @@ class java
     int numeroVocali = 0;
     int numeroConsonanti = 0;
     int numeroLettere;
-    int contantore = 0;
+    String parola=tastiera.readLine();
     {
 
     System.out.println("Scrivi una frase e ti dirò quante vocali ci sono:");
-    String parola=tastiera.readLine(); 
+     
     
     numeroLettere = parola.length();
     for (int contatore = 0; contatore < numeroLettere; contatore++) {
@@ -27,26 +27,26 @@ class java
     System.out.println("Nella parola ci sono presenti "+numeroVocali+" vocali");} 
     
     for (int contatore1 = 0; contatore1 < numeroLettere; contatore1++) {
-    if ((parola.charAt(contatore) == 'b') || (parola.charAt(contatore) == 'c') ||
-    (parola.charAt(contatore) == 'd') || (parola.charAt(contatore) == 'f') ||
-    (parola.charAt(contatore) == 'g') || (parola.charAt(contatore) == 'h') ||
-    (parola.charAt(contatore) == 'l') || (parola.charAt(contatore) == 'm') ||
-    (parola.charAt(contatore) == 'n') || (parola.charAt(contatore) == 'o') ||
-    (parola.charAt(contatore) == 'p') || (parola.charAt(contatore) == 'q') ||
-    (parola.charAt(contatore) == 'r') || (parola.charAt(contatore) == 's') ||
-    (parola.charAt(contatore) == 't') || (parola.charAt(contatore) == 'v') ||
-    (parola.charAt(contatore) == 'z') || 
-    (parola.charAt(contatore) == 'D') || (parola.charAt(contatore) == 'F') ||
-    (parola.charAt(contatore) == 'G') || (parola.charAt(contatore) == 'H') ||
-    (parola.charAt(contatore) == 'L') || (parola.charAt(contatore) == 'M') ||
-    (parola.charAt(contatore) == 'N') || (parola.charAt(contatore) == 'O') ||
-    (parola.charAt(contatore) == 'P') || (parola.charAt(contatore) == 'Q') ||
-    (parola.charAt(contatore) == 'R') || (parola.charAt(contatore) == 'S') ||
-    (parola.charAt(contatore) == 'T') || (parola.charAt(contatore) == 'V') ||
-    (parola.charAt(contatore) == 'Z') ||
-    
-    }
+    if ((parola.charAt(contatore1) == 'b') || (parola.charAt(contatore1) == 'c') ||
+    (parola.charAt(contatore1) == 'd') || (parola.charAt(contatore1) == 'f') ||
+    (parola.charAt(contatore1) == 'g') || (parola.charAt(contatore1) == 'h') ||
+    (parola.charAt(contatore1) == 'l') || (parola.charAt(contatore1) == 'm') ||
+    (parola.charAt(contatore1) == 'n') || (parola.charAt(contatore1) == 'o') ||
+    (parola.charAt(contatore1) == 'p') || (parola.charAt(contatore1) == 'q') ||
+    (parola.charAt(contatore1) == 'r') || (parola.charAt(contatore1) == 's') ||
+    (parola.charAt(contatore1) == 't') || (parola.charAt(contatore1) == 'v') ||
+    (parola.charAt(contatore1) == 'z') || 
+    (parola.charAt(contatore1) == 'D') || (parola.charAt(contatore1) == 'F') ||
+    (parola.charAt(contatore1) == 'G') || (parola.charAt(contatore1) == 'H') ||
+    (parola.charAt(contatore1) == 'L') || (parola.charAt(contatore1) == 'M') ||
+    (parola.charAt(contatore1) == 'N') || (parola.charAt(contatore1) == 'O') ||
+    (parola.charAt(contatore1) == 'P') || (parola.charAt(contatore1) == 'Q') ||
+    (parola.charAt(contatore1) == 'R') || (parola.charAt(contatore1) == 'S') ||
+    (parola.charAt(contatore1) == 'T') || (parola.charAt(contatore1) == 'V') ||
+    (parola.charAt(contatore1) == 'Z')) {numeroConsonanti++;}
     
     }
     System.out.println("Nella parola ci sono presenti "+numeroConsonanti+" consonanti");
+    }
+    
 }
